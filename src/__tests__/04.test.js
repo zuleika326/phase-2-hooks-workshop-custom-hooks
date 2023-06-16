@@ -23,7 +23,7 @@ describe("Exercise 04", () => {
     const { result } = renderHook(() => useLocalStorage("test", "old value"));
     const [, setState] = result.current;
 
-    const newValue = "new value";
+    const newValue = ("new value");
 
     act(() => {
       setState(newValue);
